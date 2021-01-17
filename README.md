@@ -22,11 +22,6 @@ Install with [npm](https://www.npmjs.com/):
 
 ````js
 import { mdLink, mdImg, mdCodeBlock } from "markdown-function"
-
-const title = "title";
-const url = "https://example.com";
-const src = "https://example.com/img.png";
-const code = "var a = 1;";
 const markdown = `## ${mdLink({ title, url })}
     
 - Text ${mdLink({ title, url })}
