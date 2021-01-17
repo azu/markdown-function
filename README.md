@@ -21,9 +21,11 @@ Install with [npm](https://www.npmjs.com/):
 ## Usage
 
 ````js
-import { mdLink, mdImg, mdCodeBlock } from "markdown-function"
+import { mdLink, mdImg, mdCodeBlock, mdEscape } from "markdown-function"
 const markdown = `## ${mdLink({ text: "**TITLE**", url: "https://example.com" })}
     
+**${mdEscape("**text**")}**    
+
 - list item
 - ${mdLink({ text: "__inline__", url: "https://example.com" })} Text
 
@@ -34,7 +36,9 @@ ${mdCodeBlock({ value: `var a = 1;`, lang: "js" })}
 console.log(markdown);
 /*
 ## [\*\*TITLE\*\*](https://example.com)
-    
+
+**\*\*text\*\***
+
 - list item
 - [\_\_inline\_\_](https://example.com) Text
 

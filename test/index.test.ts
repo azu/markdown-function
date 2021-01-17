@@ -1,9 +1,11 @@
-import { mdCodeBlock, mdImg, mdLink } from "../src";
+import { mdCodeBlock, mdImg, mdLink, mdEscape } from "../src";
 import assert from "assert";
 
 describe("index", function () {
     it("example", () => {
         const markdown = `## ${mdLink({ text: "**TITLE**", url: "https://example.com" })}
+
+**${mdEscape("**text**")}**
 
 - list item
 - ${mdLink({ text: "__inline__", url: "https://example.com" })} Text
@@ -15,6 +17,8 @@ ${mdCodeBlock({ value: `var a = 1;`, lang: "js" })}
         assert.strictEqual(
             markdown,
             `## [\\*\\*TITLE\\*\\*](https://example.com)
+
+**\\*\\*text\\*\\***
 
 - list item
 - [\\_\\_inline\\_\\_](https://example.com) Text
