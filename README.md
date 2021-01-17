@@ -31,7 +31,8 @@ ${mdImg({ url: "https://example.com/img.png" })}
 
 ${mdCodeBlock({ value: `var a = 1;`, lang: "js" })}
 `;
-console.log(markdown);/*
+console.log(markdown);
+/*
 ## [\*\*TITLE\*\*](https://example.com)
     
 - list item
