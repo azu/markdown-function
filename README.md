@@ -22,13 +22,13 @@ Install with [npm](https://www.npmjs.com/):
 
 ````js
 import { mdLink, mdImg, mdCodeBlock } from "markdown-function"
-const markdown = `## ${mdLink({ title, url })}
+const markdown = `## ${mdLink({ text: "**TITLE**", url: "https://example.com" })}
     
-- Text ${mdLink({ title, url })}
+- ${mdLink({ text: "__inline__", url: "https://example.com" })} Text
 
-${mdLink({ src })}
+${mdImg({ url: "https://example.com/img.png" })}
 
-${mdCodeBlock({ code })}
+${mdCodeBlock({ value: `var a = 1;`, lang: "js" })}
 `;
 console.log(markdown);/*
 ## [\*\*TITLE\*\*](https://example.com)
