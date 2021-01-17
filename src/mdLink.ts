@@ -1,4 +1,4 @@
-import { escape } from "./escape";
+import { mdEscape } from "./mdEscape";
 
 export type MdLinkOptions = {
     text: string;
@@ -11,7 +11,7 @@ export const mdLink = ({ text, url, title }: MdLinkOptions): string => {
         return text;
     }
     if (title) {
-        return `[${escape(text)}](${url} "${escape(title)}")`;
+        return `[${mdEscape(text)}](${url} "${mdEscape(title)}")`;
     }
-    return `[${escape(text)}](${url})`;
+    return `[${mdEscape(text)}](${url})`;
 };

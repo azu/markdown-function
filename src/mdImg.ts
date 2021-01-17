@@ -1,4 +1,4 @@
-import { escape } from "./escape";
+import { mdEscape } from "./mdEscape";
 
 export type MdImgOptions = {
     url: string;
@@ -8,5 +8,5 @@ export const mdImg = ({ url, alt = "" }: MdImgOptions): string => {
     if (!/^https?:/.test(url)) {
         return alt;
     }
-    return `![${escape(alt)}](${url})`;
+    return `![${mdEscape(alt)}](${url})`;
 };

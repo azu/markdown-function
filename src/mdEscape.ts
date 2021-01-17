@@ -10,7 +10,7 @@ const replacementsTuples: [matchPattern: RegExp, newChar: string][] = [
     [/>/g, "&gt;"],
     [/_/g, "\\_"]
 ];
-export const escape = (text: string): string => {
+export const mdEscape = (text: string): string => {
     return replacementsTuples.reduce((text, replacement) => {
         return text.replace(replacement[0], replacement[1]);
     }, text);
