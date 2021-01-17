@@ -10,7 +10,7 @@ Markdown builder functions.
 - LightWeight utils
 - Tree Shaking support
 
-If you want to add more function, Please create issue and Pull Request.
+If you want to add more function, Please create issue and Pull Request!
 
 ## Install
 
