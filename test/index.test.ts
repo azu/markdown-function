@@ -15,7 +15,7 @@ ${mdCodeBlock({ value: `var a = 1;`, lang: "js" })}
         assert.strictEqual(
             markdown,
             `## [\\*\\*TITLE\\*\\*](https://example.com)
-    
+
 - list item
 - [\\_\\_inline\\_\\_](https://example.com) Text
 
