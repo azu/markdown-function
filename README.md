@@ -10,6 +10,8 @@ Markdown builder functions.
 - LightWeight utils
 - Tree Shaking support
 
+If you want to add more function, Please create issue and Pull Request.
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
