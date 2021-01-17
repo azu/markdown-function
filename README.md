@@ -7,7 +7,7 @@ Markdown builder functions.
 - Simple tag builder function
 - Escape markdown syntax
 - Combination with Template Literal
-- Tiny size(~1kb)
+- [Tiny size(~1kb)](https://bundlephobia.com/result?p=markdown-function)
 - Tree Shaking support
 - TypeScript
 
