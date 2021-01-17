@@ -7,8 +7,9 @@ Markdown builder functions.
 - Simple tag builder function
 - Escape markdown syntax
 - Use with Template Literal
-- LightWeight utils
+- Tiny size(~1kb)
 - Tree Shaking support
+- TypeScript
 
 If you want to add more function, Please create issue and Pull Request!
 
