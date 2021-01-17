@@ -75,3 +75,7 @@ For bugs and feature requests, [please create an issue](https://github.com/azu/m
 ## License
 
 MIT © azu
+
+## Related
+
+- [Deprecated] [30-seconds/markdown-builder](https://github.com/30-seconds/markdown-builder)
