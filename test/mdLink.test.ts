@@ -8,9 +8,7 @@ const properties: [actual: MdLinkOptions, expected: string][] = [
     [
         { text: "<s>**strong**</s>", url: "https://example.com" },
         `[&lt;s&gt;\\*\\*strong\\*\\*&lt;\\/s&gt;](https://example.com)`
-    ],
-    // illegal url
-    [{ text: "text", url: "javascript:alert(1)" }, `text`]
+    ]
 ];
 describe("mdLink", function () {
     properties.forEach((property) => {

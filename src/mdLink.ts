@@ -6,10 +6,6 @@ export type MdLinkOptions = {
     title?: string;
 };
 export const mdLink = ({ text, url, title }: MdLinkOptions): string => {
-    const isURL = /^https?:/.test(url);
-    if (!isURL) {
-        return text;
-    }
     if (title) {
         return `[${mdEscape(text)}](${url} "${mdEscape(title)}")`;
     }

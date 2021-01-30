@@ -5,8 +5,5 @@ export type MdImgOptions = {
     alt?: string;
 };
 export const mdImg = ({ url, alt = "" }: MdImgOptions): string => {
-    if (!/^https?:/.test(url)) {
-        return alt;
-    }
     return `![${mdEscape(alt)}](${url})`;
 };
