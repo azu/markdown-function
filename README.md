@@ -51,6 +51,17 @@ var a = 1;
 */
 ````
 
+### No escape value
+
+`trusted` function prevent the escaping by `markdown-function`
+
+```
+import { mdLink, trusted } from "markdown-function"
+const markdown = `## ${mdLink({ text: trusted("**TITLE**"), url: "https://example.com" })};
+console.log(markdown); // => "## [**TITLE**](https://example.com)
+```
+
+
 ## Changelog
 
 See [Releases page](https://github.com/azu/markdown-function/releases).
