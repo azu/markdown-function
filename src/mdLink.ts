@@ -1,9 +1,10 @@
 import { mdEscape } from "./mdEscape";
+import { TrustedValue } from "./trusted";
 
 export type MdLinkOptions = {
-    text: string;
+    text: string | TrustedValue;
     url: string;
-    title?: string;
+    title?: string | TrustedValue;
 };
 export const mdLink = ({ text, url, title }: MdLinkOptions): string => {
     if (title) {
