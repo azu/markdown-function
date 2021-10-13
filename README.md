@@ -55,7 +55,7 @@ var a = 1;
 
 `trusted` function prevent the escaping by `markdown-function`
 
-```
+```js
 import { mdLink, trusted } from "markdown-function"
 const markdown = `## ${mdLink({ text: trusted("**TITLE**"), url: "https://example.com" })};
 console.log(markdown); // => "## [**TITLE**](https://example.com)
