@@ -1,5 +1,5 @@
 import { mdImg, MdImgOptions } from "../src";
-import assert from "assert";
+import assert from "node:assert";
 
 const properties: [actual: MdImgOptions, expected: string][] = [
     [{ alt: "alt", url: "https://example.com" }, `![alt](https://example.com)`],

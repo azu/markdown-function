@@ -1,5 +1,5 @@
 import { mdCodeBlock, mdImg, mdLink, mdEscape } from "../src";
-import assert from "assert";
+import assert from "node:assert";
 
 describe("index", function () {
     it("example", () => {

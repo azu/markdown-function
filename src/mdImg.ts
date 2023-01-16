@@ -1,5 +1,5 @@
-import { mdEscape } from "./mdEscape";
-import { TrustedValue } from "./trusted";
+import { mdEscape } from "./mdEscape.js";
+import { TrustedValue } from "./trusted.js";
 
 export type MdImgOptions = {
     url: string;
