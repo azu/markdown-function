@@ -1,5 +1,5 @@
-import { mdCodeBlock, MdCodeBlock } from "../src";
-import assert from "assert";
+import { mdCodeBlock, MdCodeBlock } from "../src/index.js";
+import assert from "node:assert";
 
 const properties: [actual: MdCodeBlock, expected: string][] = [
     [{ value: "alert(1)" }, "```\nalert(1)\n```"],

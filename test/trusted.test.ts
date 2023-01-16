@@ -1,5 +1,5 @@
-import { trusted, mdLink } from "../src";
-import assert from "assert";
+import { trusted, mdLink } from "../src/index.js";
+import assert from "node:assert";
 
 describe("trusted", function () {
     it("should not be escaped", () => {

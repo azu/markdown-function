@@ -1,4 +1,4 @@
-import { isTrustedValue, TrustedValue } from "./trusted";
+import { isTrustedValue, TrustedValue } from "./trusted.js";
 
 const replacementsTuples: [matchPattern: RegExp, newChar: string][] = [
     [/\*/g, "\\*"],
