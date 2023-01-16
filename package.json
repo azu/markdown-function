@@ -73,7 +73,6 @@
     "lint-staged": "^10.5.3",
     "mocha": "^10.2.0",
     "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "tsconfig-to-dual-package": "^1.1.0",
     "typescript": "^4.9.4"
