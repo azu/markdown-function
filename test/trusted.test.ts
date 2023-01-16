@@ -1,4 +1,4 @@
-import { trusted, mdLink } from "../src";
+import { trusted, mdLink } from "../src/index.js";
 import assert from "node:assert";
 
 describe("trusted", function () {

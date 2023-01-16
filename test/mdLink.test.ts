@@ -1,4 +1,4 @@
-import { mdLink, MdLinkOptions } from "../src";
+import { mdLink, MdLinkOptions } from "../src/index.js";
 import assert from "node:assert";
 
 const properties: [actual: MdLinkOptions, expected: string][] = [

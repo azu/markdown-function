@@ -1,4 +1,4 @@
-import { mdImg, MdImgOptions } from "../src";
+import { mdImg, MdImgOptions } from "../src/index.js";
 import assert from "node:assert";
 
 const properties: [actual: MdImgOptions, expected: string][] = [
